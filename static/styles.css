@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+#game-board {
+  margin: 20px auto;
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.tile {
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border: 1px solid #999;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 50px;
+}
+
+.correct {
+  background-color: green;
+  color: white;
+}
+
+.present {
+  background-color: yellow;
+  color: black; /* Yellow on white is hard to read, so we switch the text color */
+}
+
+.absent {
+  background-color: gray;
+  color: white;
+}
+
+#keyboard button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
